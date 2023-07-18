@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+height: 100vh;
+  display: grid;
+  grid-template-columns:1fr 5fr;
+}
+
+.header {
+  background-color: wheat;
+  grid-column: 2/3;
+  display: grid;
+  grid-template: 1fr 2fr/1fr;
+  padding: 0 2em;
+}
+
+.header-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.header-bot{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+.header-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.header-buttons> button{
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.sidebar {
+  background-color: lightblue;
+  grid-row: 1/3;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.branding{
+    font-size: 2rem;
+    padding-bottom: 4rem;
+    align-items: center;
+}
+
+.branding img{
+    width: 3rem;
+}
+
+nav {
+  padding-left: 1rem;
+  display: grid;
+  gap: 50px;
+}
+
+img{
+    width: 1em;
+}
+
+
+ul {
+  list-style-type: none;
+  display: grid;
+  gap: 20px;
+}
+
+li, .branding{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-content: center;
+}
+
+
+.main-content {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  gap: 15px;
+  padding: 1rem;
+}
+
+.your-projects{
+    grid-row: 1/3;
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    background-color: lightseagreen;
+    max-height: 250px;
+    padding: 1em;
+    border-radius: 10px;
+    border-left: 10px solid salmon;
+}
+
+.announcements{
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+}
+
+.announcement-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em 2rem;
+    height: fit-content;
+}
+
+.announcement{
+    padding: 1em;
+}
+
+.trending{
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+}
+
+.trending-items{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    height: fit-content;
+}
